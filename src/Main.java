@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        task1();
+        task1(); task2(); task3(); task4(); task5();
     }
     public static void task1() {
         int clientOS = 0;
@@ -9,7 +9,6 @@ public class Main {
         } else {
             System.out.println("Установите версию приложения для Android по ссылке");
         }
-        task2();
     }
     public static void task2() {
         int clientOS = 0;
@@ -18,13 +17,11 @@ public class Main {
             System.out.println("Установите версию приложения для iOS по ссылке");
         } else if (clientOS == 0 && clientDeviceYear < 2015) {
             System.out.println("Установите облегченную версию приложения для iOS по ссылке");
-        }
-        if (clientOS != 0 && clientDeviceYear >= 2015) {
+        } else if (clientOS != 0 && clientDeviceYear >= 2015) {
             System.out.println("Установите версию приложения для Android по ссылке");
         } else if (clientOS != 0 && clientDeviceYear < 2015) {
             System.out.println("Установите облегченную версию приложения для Android по ссылке");
         }
-        task3();
     }
     public static void task3() {
         int year = 2020;
@@ -33,7 +30,6 @@ public class Main {
         } else {
             System.out.println(year + " год не является високосным");
         }
-        task4();
     }
     public static void task4() {
         int deliveryDistance = 95;
@@ -42,13 +38,11 @@ public class Main {
         int deliveryDays100Km = 3;
         if (deliveryDistance <= 20) {
             System.out.println("Потребуется дней: " + deliveryDays20Km);
-        }
-        if (deliveryDistance > 20 && deliveryDistance < 60) {
+        } else if (deliveryDistance > 20 && deliveryDistance < 60) {
             System.out.println("Потребуется дней: " + deliveryDays60Km);
         } else {
             System.out.println("Потребуется дней: " + deliveryDays100Km);
         }
-        task5();
     }
     public static void task5() {
         int monthNumber = 13;
